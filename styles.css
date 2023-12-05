@@ -93,26 +93,4 @@ body {
   background-color: aquamarine;
   box-shadow: 1px 1px 1px black;
 }
-.main-footer {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: greenyellow;
-  padding: 5vw;
-  position: sticky;
-  bottom: 0px;
-}
-.home--image {
-  width: 10vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-.bookmark-full--image {
-  width: 10vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-.profile--image {
-  width: 10vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
+@import "components/navigation.css";

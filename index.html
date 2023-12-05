@@ -1,100 +1,112 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <title>CSS Quiz by Rubens Kuhn & Spiced Academy</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  
 
   <body>
-    <header class="header">
-      <img src="./resources/home.png" class="Home">
-          Supa Dupa CSS Quiza-Aaargh!!
-    <header>
-    <body style="background-color:rgb(146, 255, 127);">
-      <div style="background-color: aquamarine;" class="main-box"/> 
-      
-        <h1 class="main-content">
-          <div style="background-color: rgb(43, 226, 116);" /> 
-             <p class="initial-text">
-                Please answer the following questions on css
-                Then, press "Show Answer" to check your response 
-                Good Luck! 
-                :)
-             </p>
-            </div>
+    <header class="title">Supa Dupa CSS Quiza!</header>
 
-          <section class="quiz-card">
-              <div style="background-color: rgb(43, 226, 168);" class="quiz-card"/> 
-                <section class="question">
-                  <a href="1-Question"> 1. Question </a>
-                    <p>What does CSS stand for?
-                    </p> 
-                  </section>
-                <section>
-                  <button class="show-answer">
-                    <img src="./resources/question.png" alt="Answer" class="show-answer--image">
-                  </button>
-                </section>
-                <section class="bookmark">
-                  <button class="button-bookmark">
-                    <img src="./resources/bookmark.png" alt="alt-bookmark" class="bookmark--image">
-                 </button> 
-                </section>
-                <section class="code-buttons">
-                       <button class="code-html">
-                          #html
-                       </button> 
-                      <button class="code-flexbox">
-                           #flexbox
-                      </button>
-                     <button class="code-css">
-                         #css
-                    </button> 
-                </section>
-              </article>
-            <p>
-            </p>
-            <article class="quiz-card-2">
-              <div style="background-color: rgb(43, 226, 168);" /> 
-              <a href="2-Question">2. Question </a>
-                <p>
-                  Which HTML tag is used to link an external CSS file to an HTML document? 
-                </p>
-            </article>
+    <main class="main">
+      <section class="quiz-card">
+        <p class="question">1. Question: What does CSS stand for?</p>
+        <button class="show-answer">
+          <img
+            src="./resources/question.png"
+            alt="Answer"
+            class="show-answer--image"
+          />
+        </button>
+        <p class="answer">Answer: Cascading Style Sheets</p>
+        <button class="button-bookmark">
+          <img
+            src="./resources/bookmark.png"
+            alt="alt-bookmark"
+            class="bookmark--image"
+          />
+        </button>
+        <p class="list">#html #flexbox #css</p>
+      </section>
 
-            <article class="quiz-card-3">
-              <div style="background-color: rgb(43, 226, 168);" /> 
-              <a href="3-Question">3. Question </a>
-                <p>
-                  What is the purpose of the HTML <div> element?
-                </p>
-            </article>
+      <section class="quiz-card">
+        <p class="question">
+          2. Question: Which HTML tag is used to link an external CSS file to an
+          HTML document?
+        </p>
 
-            <article class="quiz-card-4">
-              <div style="background-color: rgb(43, 226, 168);" /> 
-              <a href="4-Question">4. Question </a>
-                <p>
-                  Which CSS property is used to change the text color of an element?
-                </p>
-            </article>
+        <button class="show-answer">
+          <img
+            src="./resources/question.png"
+            alt="Answer"
+            class="show-answer--image"
+          />
+        </button>
+        <p class="answer">Answer: link</p>
 
+        <button class="button-bookmark">
+          <img
+            src="./resources/bookmark.png"
+            alt="alt-bookmark"
+            class="bookmark--image"
+          />
+        </button>
 
-        </section>
+        <li class="list">#html #flexbox #css</li>
+      </section>
 
-      </main>
-  
-  </div>
-  <footer class="main-footer">
-    <nav>
-        <a href="#home"> Home</a>
-        <a href="#Profile-Page"> Profile-Page </a>
-        <a href="#Background-Options"> Background Options</a>
-    </nav>
-   </footer>
+      <section class="quiz-card">
+        <p class="question">
+          3. Question: What is the purpose of the HTML div element?
+        </p>
+
+        <button class="show-answer">
+          <img
+            src="./resources/question.png"
+            alt="Answer"
+            class="show-answer--image"
+          />
+        </button>
+        <p class="answer hidden">
+          Answer: It is a container element used to group and style content
+          together.
+        </p>
+
+        <button class="button-bookmark">
+          <img
+            src="./resources/bookmark.png"
+            alt="alt-bookmark"
+            class="bookmark--image"
+          />
+        </button>
+
+        <li class="list">#html #flexbox #css</li>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <nav>
+        <a href="#home">
+          <img src="./resources/home.png" alt="alt-home" class="home--image" />
+        </a>
+        <a href="#bookmark">
+          <img
+            src="./resources/bookmark_filled.png"
+            alt="alt-bookmark"
+            class="bookmark-full--image"
+          />
+        </a>
+        <a href="#profile">
+          <img
+            src="./resources/profile.png"
+            alt="alt-profile"
+            class="profile--image"
+          />
+        </a>
+      </nav>
+    </footer>
   </body>
 </html>

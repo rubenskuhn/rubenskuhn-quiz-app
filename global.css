@@ -1,0 +1,118 @@
+* {
+  position: relative;
+  padding: 2pw;
+  margin: 1vw;
+  font-size: 3vw;
+  font-weight: lighter;
+}
+
+body {
+  background-color: aqua;
+  font-family: Geneva;
+  padding: 2vw;
+  margin: 1vw;
+  max-width: 1200px;
+}
+
+.title {
+  display: flex;
+  background-color: greenyellow;
+  font-size: 6vw;
+  justify-content: center;
+  padding: 3vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 3vw;
+  margin-top: 3vw;
+  margin-bottom: 10vw;
+  background-color: greenyellow;
+}
+
+.quiz-card {
+  border-radius: 5%;
+  padding: 3vw;
+  background-color: rgb(43, 226, 168);
+  font-size: 3vw;
+}
+
+.show-answer--image {
+  width: 10vw;
+}
+.show-answer {
+  margin: 3vw;
+  background-color: aquamarine;
+  align-self: center;
+  box-shadow: 1px 1px 1px black;
+}
+.show-answer:active {
+  background-color: rgb(12, 176, 176);
+  #Do not forget soud#;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.bookmark--image {
+  width: 8vw;
+}
+.button-bookmark {
+  border: transparent;
+  position: absolute;
+  padding: 0;
+  top: -4vw;
+  right: 0;
+  background: transparent;
+}
+.button-bookmark:active {
+  background-color: rgb(12, 176, 176);
+  #Do not forget soud#;
+}
+
+.code-buttons {
+  padding: 2vw;
+  flex-direction: column;
+  box-shadow: 1px 1px 1px black;
+}
+.code-html {
+  width: 10vw;
+  background-color: aquamarine;
+  box-shadow: 1px 1px 1px black;
+}
+.code-flexbox {
+  width: 15vw;
+  background-color: aquamarine;
+  box-shadow: 1px 1px 1px black;
+}
+.code-css {
+  width: 10vw;
+  background-color: aquamarine;
+  box-shadow: 1px 1px 1px black;
+}
+.main-footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: greenyellow;
+  padding: 5vw;
+  position: sticky;
+  bottom: 0px;
+}
+.home--image {
+  width: 10vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.bookmark-full--image {
+  width: 10vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.profile--image {
+  width: 10vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
