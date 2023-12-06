@@ -1,0 +1,9 @@
+.title {
+  display: flex;
+  border-radius: 3vw;
+  background-color: greenyellow;
+  font-size: 7vw;
+  font-weight: bold;
+  justify-content: center;
+  padding: 5vw;
+}

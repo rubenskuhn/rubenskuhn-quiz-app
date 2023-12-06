@@ -1,0 +1,27 @@
+.show-answer--image {
+  width: 10vw;
+}
+.show-answer {
+  margin: 3vw;
+  background-color: aquamarine;
+  align-self: center;
+  box-shadow: 1px 1px 1px black;
+}
+.show-answer:active {
+  background-color: rgb(12, 176, 176);
+}
+
+.bookmark--image {
+  width: 8vw;
+}
+.button-bookmark {
+  border: transparent;
+  position: absolute;
+  padding: 0;
+  top: -4vw;
+  right: 0;
+  background: transparent;
+}
+.button-bookmark:active {
+  background-color: rgb(12, 176, 176);
+}

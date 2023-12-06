@@ -1,0 +1,44 @@
+.profile-main {
+  border-radius: 3vw;
+  justify-content: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2vw;
+  background-color: greenyellow;
+  max-width: 900px;
+}
+.profile--card {
+  display: flex;
+  align-items: center;
+}
+.profile--picture {
+  position: relative;
+  width: 40vw;
+}
+.profile--name {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 6vw;
+  margin-left: 3%;
+  padding: 3vw;
+}
+
+.profile--info {
+  display: flex;
+  font-size: 10vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  padding: 3vw;
+}
+.settings {
+  justify-content: center;
+  font-size: 10vw;
+  margin-left: 10%;
+  padding: 3vw;
+}
+.mode {
+  display: flex;
+  margin-left: 10%;
+}

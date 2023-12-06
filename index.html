@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,19 +9,22 @@
   </head>
 
   <body>
-    <header class="title">Supa Dupa CSS Quiza!</header>
+    <header class="title">Supa Dupa CSS Quiza!!</header>
 
     <main class="main">
       <section class="quiz-card">
-        <p class="question">1. Question: What does CSS stand for?</p>
-        <button class="show-answer">
-          <img
-            src="./resources/question.png"
-            alt="Answer"
-            class="show-answer--image"
-          />
-        </button>
-        <p class="answer">Answer: Cascading Style Sheets</p>
+        <p class="question--number">1. Question:</p>
+        <p class="question">What does CSS stand for?</p>
+        <div class="answer--field">
+          <button class="show-answer">
+            <img
+              src="./resources/question.png"
+              alt="alt-answer"
+              class="show-answer--image"
+            />
+          </button>
+          <p class="answer hidden">Answer: Cascading Style Sheets</p>
+        </div>
         <button class="button-bookmark">
           <img
             src="./resources/bookmark.png"
@@ -29,24 +32,29 @@
             class="bookmark--image"
           />
         </button>
-        <p class="list">#html #flexbox #css</p>
+        <div class="tag--field">
+          <a href="#html" class="tag-html"> #html</a>
+          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+          <a href="#css" class="tag-flexbox"> #css</a>
+        </div>
       </section>
 
       <section class="quiz-card">
+        <p class="question--number">2. Question:</p>
         <p class="question">
-          2. Question: Which HTML tag is used to link an external CSS file to an
-          HTML document?
+          Which HTML tag is used to link an external CSS file to an HTML
+          document?
         </p>
-
-        <button class="show-answer">
-          <img
-            src="./resources/question.png"
-            alt="Answer"
-            class="show-answer--image"
-          />
-        </button>
-        <p class="answer">Answer: link</p>
-
+        <div class="answer--field">
+          <button class="show-answer">
+            <img
+              src="./resources/question.png"
+              alt="alt-answer"
+              class="show-answer--image"
+            />
+          </button>
+          <p class="answer hidden">Answer: link</p>
+        </div>
         <button class="button-bookmark">
           <img
             src="./resources/bookmark.png"
@@ -54,27 +62,28 @@
             class="bookmark--image"
           />
         </button>
-
-        <li class="list">#html #flexbox #css</li>
+        <div class="tag--field">
+          <a href="#html" class="tag-html"> #html</a>
+          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+          <a href="#css" class="tag-flexbox"> #css</a>
+        </div>
       </section>
 
       <section class="quiz-card">
-        <p class="question">
-          3. Question: What is the purpose of the HTML div element?
-        </p>
-
-        <button class="show-answer">
-          <img
-            src="./resources/question.png"
-            alt="Answer"
-            class="show-answer--image"
-          />
-        </button>
-        <p class="answer hidden">
-          Answer: It is a container element used to group and style content
-          together.
-        </p>
-
+        <p class="question--number">3. Question:</p>
+        <p class="question">What is the purpose of the HTML div element?</p>
+        <div class="answer--field">
+          <button class="show-answer">
+            <img
+              src="./resources/question.png"
+              alt="alt-answer"
+              class="show-answer--image"
+            />
+          </button>
+          <p class="answer hidden">
+            Answer: It is a container element used to group and style content together.
+          </p>
+        </div>
         <button class="button-bookmark">
           <img
             src="./resources/bookmark.png"
@@ -82,24 +91,115 @@
             class="bookmark--image"
           />
         </button>
-
-        <li class="list">#html #flexbox #css</li>
+        <div class="tag--field">
+          <a href="#html" class="tag-html"> #html</a>
+          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+          <a href="#css" class="tag-flexbox"> #css</a>
+        </div>
       </section>
+
+      <section class="quiz-card">
+        <p class="question--number">4. Question:</p>
+        <p class="question">Which CSS property is used to change the text color of an element?</p>
+        <div class="answer--field">
+          <button class="show-answer">
+            <img
+              src="./resources/question.png"
+              alt="alt-answer"
+              class="show-answer--image"
+            />
+          </button>
+          <p class="answer hidden">
+            Answer: color
+          </p>
+        </div>
+        <button class="button-bookmark">
+          <img
+            src="./resources/bookmark.png"
+            alt="alt-bookmark"
+            class="bookmark--image"
+          />
+        </button>
+        <div class="tag--field">
+          <a href="#html" class="tag-html"> #html</a>
+          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+          <a href="#css" class="tag-flexbox"> #css</a>
+        </div>
+      </section>
+
+      <main class="main">
+        <section class="quiz-card">
+          <p class="question--number">5. Question:</p>
+          <p class="question">What is the default display property for most HTML elements?</p>
+          <div class="answer--field">
+            <button class="show-answer">
+              <img
+                src="./resources/question.png"
+                alt="alt-answer"
+                class="show-answer--image"
+              />
+            </button>
+            <p class="answer hidden">Answer: block</p>
+          </div>
+          <button class="button-bookmark">
+            <img
+              src="./resources/bookmark.png"
+              alt="alt-bookmark"
+              class="bookmark--image"
+            />
+          </button>
+          <div class="tag--field">
+            <a href="#html" class="tag-html"> #html</a>
+            <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+            <a href="#css" class="tag-flexbox"> #css</a>
+          </div>
+        </section>
+
+        <section class="quiz-card">
+          <p class="question--number">6. Question:</p>
+          <p class="question">How can you center an element horizontally in CSS?</p>
+          <div class="answer--field">
+            <button class="show-answer">
+              <img
+                src="./resources/question.png"
+                alt="alt-answer"
+                class="show-answer--image"
+              />
+            </button>
+            <p class="answer hidden">Answer: By setting its margin property to auto.</p>
+          </div>
+          <button class="button-bookmark">
+            <img
+              src="./resources/bookmark.png"
+              alt="alt-bookmark"
+              class="bookmark--image"
+            />
+          </button>
+          <div class="tag--field">
+            <a href="#html" class="tag-html"> #html</a>
+            <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+            <a href="#css" class="tag-flexbox"> #css</a>
+          </div>
+        </section>
+  
+
     </main>
 
     <footer class="main-footer">
       <nav>
-        <a href="#home">
-          <img src="./resources/home.png" alt="alt-home" class="home--image" />
+        <a href="index.html">
+          <img src="./resources/home_filled.png" alt="alt-home" class="home--image" />
         </a>
-        <a href="#bookmark">
+
+        <a href="bookmark.html">
           <img
-            src="./resources/bookmark_filled.png"
+            src="./resources/bookmark_transparent.png"
             alt="alt-bookmark"
             class="bookmark-full--image"
           />
         </a>
-        <a href="#profile">
+        
+        <a href="profile.html">
           <img
             src="./resources/profile.png"
             alt="alt-profile"
