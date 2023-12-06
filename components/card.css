@@ -1,35 +1,44 @@
 .quiz-card {
+  position: relative;
   border-radius: 2vw;
-  padding: 5%;
+  padding: 2vw;
   background-color: rgb(43, 226, 168);
   margin-bottom: 5%;
-  max-width: 850px;
+  max-width: 1500px;
 }
 .question--number {
-  font-size: 1.5rem;
+  margin-left: 1%;
+  font-size: 2rem;
   font-weight: bold;
 }
 .question {
-  margin-top: 3%;
-  font-size: 1.5rem;
+  margin-top: 2%;
+  font-size: 2rem;
+  margin-left: 7%;
   font-style: italic;
 }
+.show-answer--image {
+  width: 2vw;
+}
+
 .answer--field {
-  margin-left: -2%;
+  margin-left: 4%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-top: -5%;
 }
 .answer {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
+
 a {
   color: black;
 }
 
 .tag--field {
   padding: 3%;
-  margin-left: -2%;
+  margin-left: 4%;
   flex-direction: column;
 }
 .tag-html {

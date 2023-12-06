@@ -1,36 +1,17 @@
-@import url(components/navigation.css) screen and (max-width: 900px);
-@import url(components/header.css) screen and (max-width: 900px);
-@import url(components/card.css) screen and (max-width: 900px);
-@import url(components/button.css) screen and (max-width: 900px);
-@import url(components/profile.css) screen and (max-width: 900px);
-
-:root {
-  --font-size: 9px;
-}
-@media (min-width: 900px) {
-  :root {
-    --font-size: 10px;
-  }
-}
-@media (min-width: 900px) {
-  :root {
-    --font-size: 11px;
-    display: block;
-  }
-}
+@import url(components/navigation.css);
+@import url(components/header.css);
+@import url(components/card.css);
+@import url(components/button.css);
+@import url(components/profile.css);
 
 * {
-  position: relative;
   font-family: Geneva;
-  padding: 2pw;
-  margin: 1vw;
-  max-width: 1200px;
 }
 
 body {
   background-color: aqua;
   padding: 2vw;
-  max-width: 1200px;
+  max-width: 1800px;
 }
 
 .main {
@@ -40,6 +21,27 @@ body {
   justify-content: space-evenly;
   padding: 3vw;
   margin-top: 3vw;
+  margin-bottom: 1vw;
   background-color: greenyellow;
-  max-width: 1200px;
+  max-width: 1800px;
+  box-shadow: 1px 1px 1px;
+}
+
+:root {
+  --font-size: 10px;
+}
+@media (min-width: 600px) {
+  :root {
+    --font-size: 12px;
+  }
+}
+@media (min-width: 900px) {
+  :root {
+    --font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --font-size: 16px;
+  }
 }

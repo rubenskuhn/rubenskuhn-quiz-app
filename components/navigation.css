@@ -1,56 +1,58 @@
 .main-footer {
   border-radius: 3vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: space-between;
   background-color: greenyellow;
   padding: 2vw;
   position: sticky;
   bottom: 0px;
-  max-width: 1200px;
+  max-width: 1500px;
+  box-shadow: 1px 1px 1px;
 }
 .home-inactive {
   background-color: transparent;
-  width: 2rem;
-  padding: 3vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  width: 4vw;
+  padding: 2vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 .profile-inactive {
   background-color: transparent;
-  width: 2rem;
-  padding: 3vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  width: 4vw;
+  padding: 2vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 .bookmark-inactive {
   background-color: transparent;
-  width: 2rem;
-  padding: 3vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  width: 4vw;
+  padding: 2vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
   box-shadow: transparent;
 }
 .home-active {
   background-color: aquamarine;
-  width: 2rem;
-  padding: 3vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  width: 4vw;
+  padding: 2vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
   box-shadow: 1px 1px 1px;
 }
 .bookmark-active {
   background-color: aquamarine;
-  width: 2rem;
-  padding: 3vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  width: 4vw;
+  padding: 2vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
   box-shadow: 1px 1px 1px;
 }
 .profile-active {
   background-color: aquamarine;
-  width: 2rem;
-  padding: 3vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  width: 4vw;
+  padding: 2vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
   box-shadow: 1px 1px 1px;
 }

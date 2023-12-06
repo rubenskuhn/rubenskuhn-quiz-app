@@ -16,6 +16,38 @@ body {
 
 .title {
   display: flex;
+  @import url(components/navigation.css) screen and (max-width: 900px);
+  @import url(components/header.css) screen and (max-width: 900px);
+  @import url(components/card.css) screen and (max-width: 900px);
+  @import url(components/button.css) screen and (max-width: 900px);
+  @import url(components/profile.css) screen and (max-width: 900px);
+
+  * {
+    position: relative;
+    font-family: Geneva;
+    padding: 2pw;
+    margin: 1vw;
+    max-width: 1200px;
+  }
+
+  body {
+    max-width: 900px;
+    background-color: aqua;
+    padding: 2vw;
+    max-width: 1200px;
+  }
+
+  .main {
+    display: flex;
+    border-radius: 3vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3vw;
+    margin-top: 3vw;
+    background-color: greenyellow;
+    max-width: 1200px;
+  }
+
   background-color: greenyellow;
   font-size: 6vw;
   justify-content: center;
@@ -115,4 +147,17 @@ body {
   width: 10vw;
   margin-left: 5vw;
   margin-right: 5vw;
+}
+:root {
+  --font-size: 9px;
+}
+@media (min-width: 600px) {
+  :root {
+    --font-size: 10px;
+  }
+}
+@media (min-width: 900px) {
+  :root {
+    --font-size: 11px;
+  }
 }

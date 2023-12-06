@@ -21,7 +21,7 @@
   border: transparent;
   position: absolute;
   padding: 0;
-  top: -4vw;
+  top: -2vw;
   right: 0;
   background: transparent;
 }
@@ -29,7 +29,7 @@
   border: transparent;
   position: absolute;
   padding: 0;
-  top: -4vw;
+  top: -2vw;
   right: 0;
   background: transparent;
 }
@@ -38,4 +38,10 @@
   visibility: none;
   .bookmark--image-active
   background-color: rgb(12, 176, 176);
+}
+.toggle {
+  padding: 1vw;
+  margin-left: 1%;
+  font-size: 1.1rem;
+  box-shadow: 1px 1px 1px;
 }
