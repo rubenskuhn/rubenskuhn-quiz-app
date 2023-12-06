@@ -3,14 +3,15 @@
   padding: 5%;
   background-color: rgb(43, 226, 168);
   margin-bottom: 5%;
+  max-width: 850px;
 }
 .question--number {
-  font-size: 6vw;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .question {
   margin-top: 3%;
-  font-size: 5vw;
+  font-size: 1.5rem;
   font-style: italic;
 }
 .answer--field {
@@ -20,7 +21,7 @@
   align-items: center;
 }
 .answer {
-  font-size: 5vw;
+  font-size: 1.5rem;
 }
 a {
   color: black;
@@ -32,18 +33,21 @@ a {
   flex-direction: column;
 }
 .tag-html {
+  font-size: 1rem;
   width: 5vw;
   padding: 0.5vw;
   background-color: rgb(111, 241, 198);
   box-shadow: 1px 1px 1px black;
 }
 .tag-flexbox {
+  font-size: 1rem;
   width: 5vw;
   padding: 0.5vw;
   background-color: rgb(111, 241, 198);
   box-shadow: 1px 1px 1px black;
 }
 .tag-css {
+  font-size: 1rem;
   width: 5vw;
   padding: 0.5vw;
   background-color: rgb(111, 241, 198);

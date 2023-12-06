@@ -1,17 +1,38 @@
-@import url(components/navigation.css) screen and (max-width: 1200px);
-@import url(components/header.css) screen and (max-width: 1200px);
-@import url(components/card.css) screen and (max-width: 1200px);
-@import url(components/button.css) screen and (max-width: 1200px);
-@import url(components/profile.css) screen and (max-width: 1200px);
+@import url(components/navigation.css) screen and (max-width: 900px);
+@import url(components/header.css) screen and (max-width: 900px);
+@import url(components/card.css) screen and (max-width: 900px);
+@import url(components/button.css) screen and (max-width: 900px);
+@import url(components/profile.css) screen and (max-width: 900px);
+
+:root {
+  --font-size: 9px;
+}
+@media (min-width: 900px) {
+  :root {
+    --font-size: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --font-size: 11px;
+  }
+}
+@media (min-width: 1500px) {
+  :root {
+    --font-size: 12px;
+  }
+}
+
 * {
   position: relative;
+  font-family: Geneva;
   padding: 2pw;
   margin: 1vw;
+  max-width: 1200px;
 }
 
 body {
   background-color: aqua;
-  font-family: Geneva;
   padding: 2vw;
   max-width: 1200px;
 }
@@ -24,4 +45,5 @@ body {
   padding: 3vw;
   margin-top: 3vw;
   background-color: greenyellow;
+  max-width: 1200px;
 }
