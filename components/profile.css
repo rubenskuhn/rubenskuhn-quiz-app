@@ -5,11 +5,16 @@
   flex-wrap: wrap;
   padding: 2vw;
   background-color: greenyellow;
-  max-width: 900px;
+  margin-top: 3vw;
+  max-width: 1200px;
 }
 .profile--card {
+  border-radius: 3vw;
+  background-color: rgb(43, 226, 168);
   display: flex;
   align-items: center;
+  padding: 3vw;
+  margin-bottom: 5%;
 }
 .profile--picture {
   position: relative;
@@ -25,20 +30,31 @@
 }
 
 .profile--info {
+  background-color: rgb(43, 226, 168);
+  border-radius: 3vw;
   display: flex;
-  font-size: 10vw;
+  font-size: 5vw;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 10%;
   padding: 3vw;
+  margin-bottom: 5%;
 }
 .settings {
+  background-color: rgb(43, 226, 49);
+  border-radius: 3vw;
+  display: flex;
   justify-content: center;
-  font-size: 10vw;
-  margin-left: 10%;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 5vw;
+  flex-direction: column;
   padding: 3vw;
+  margin: 2%;
 }
 .mode {
   display: flex;
-  margin-left: 10%;
+  font-size: 5vw;
+}
+.toggle {
+  font-size: 4vw;
 }
