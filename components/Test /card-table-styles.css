@@ -1,0 +1,44 @@
+body{
+    box-sizing: border-box
+      border: 1px solid #ddd;
+      background-color: lightblue;
+  }
+
+  
+  table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse:separate;
+    border-spacing:0 15px;
+    width: 100%;
+    border: none
+  }
+  
+  table td, tb1 th {
+    padding: 20px;
+    display: block;
+      background-color: azure;
+      padding: 10px;
+      margin: 3%;
+  }
+  
+  table tr {
+    background-color: #eaeefa;
+    display: inline-block;
+}
+  
+ # table th {
+ #   padding-top: 12px;
+ #   padding-bottom: 12px;
+ #   text-align: left;
+ #   background-color: #d9dff3;
+ # }
+  
+  td:first-child,
+  th:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+  td:last-child,
+  th:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+}

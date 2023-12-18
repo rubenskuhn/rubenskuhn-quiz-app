@@ -6,19 +6,43 @@
     <title>Document</title>
     <title>CSS Quiz by Rubens Kuhn & Spiced Academy</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./js/bookmark.js" defer></script>
+
+    <!-- 
+
+      Introducing code to limmit scale down of the page for moblile phones
+      So far seems good 
+      don't know how it works, plese recheck
+      it is an html hard solution: java might have smarter ones 
+      cheat from @mevsme @stackoverflow.com follows.
+      Begining of the cheat:
+
+
+    -->>  
+    <meta name="viewport" id="vp" content="user-scalable=no, width=520, initial-scale=0.5, maximum-scale=0.5">
+      <script>
+        window.onload = function() {
+        if (screen.width > 520) {
+            var mvp = document.getElementById('vp');
+            //mvp.setAttribute('content','');
+            mvp.setAttribute('content','width=device-width, initial-scale=1');
+        }
+      }
+      </script>
+    <!-- 
+
+      :End of cheat.
+
+    -->>
   </head>
 
   <body>
     <header class="title">Supa Dupa CSS Quiza!!</header>
 
     <main class="main">
-      
-      <section class="quiz_card">
-        <p class="quiz_card-number_text">1. Question:</p>
-        <p class="quiz_card-question_text">What does CSS stand for?</p>
-
-        <div class="quiz_card-answer_container">
+      <section class="card">
+        <p class="quiz_card-number">1. Question:</p>
+        <p class="quiz_card-question">What does CSS stand for?</p>
+        <div class="quiz_card-answer_field">
           <button class="quiz_card-answer_button">
             <img
               src="./resources/question.png"
@@ -26,21 +50,20 @@
               class="quiz_card-answer_button-image"
             />
           </button>
-          <p class="quiz_card-answer_text hidden">
-            Answer: Cascading Style Sheets
-          </p>
+          <p class="quiz_card-answer_text hidden">Answer: Cascading Style Sheets</p>
         </div>
-
         <button class="quiz_card-bookmark_button">
           <img
             src="./resources/bookmark.png"
             alt="alt-bookmark"
-            class="quiz_card-bookmark_button-image_white"
+            class="quiz_card-bookmark_button-inactive_image"
           />
+        </button>
+        <button class="quiz_card-bookmark_button-ative_image">
           <img
             src="./resources/bookmark_filled.png"
             alt="alt-bookmark-active"
-            class="quiz_card-bookmark_button-ative_image"
+            class="bookmark--image-active"
           />
         </button>
 
@@ -75,7 +98,7 @@
           />
         </button>
       </button>
-      <button class="button-bookmark-active">
+      <button class="button-bookmark-active hidden">
         <img
           src="./resources/bookmark_filled.png"
           alt="alt-bookmark-active"
@@ -112,7 +135,7 @@
           />
         </button>
       </button>
-      <button class="button-bookmark-active">
+      <button class="button-bookmark-active hidden">
         <img
           src="./resources/bookmark_filled.png"
           alt="alt-bookmark-active"
@@ -149,7 +172,7 @@
           />
         </button>
       </button>
-      <button class="button-bookmark-active">
+      <button class="button-bookmark-active hidden">
         <img
           src="./resources/bookmark_filled.png"
           alt="alt-bookmark-active"
@@ -184,7 +207,7 @@
             />
           </button>
         </button>
-        <button class="button-bookmark-active">
+        <button class="button-bookmark-active hidden">
           <img
             src="./resources/bookmark_filled.png"
             alt="alt-bookmark-active"
@@ -219,7 +242,7 @@
             />
           </button>
         </button>
-        <button class="button-bookmark-active">
+        <button class="button-bookmark-active hidden">
           <img
             src="./resources/bookmark_filled.png"
             alt="alt-bookmark-active"
@@ -239,21 +262,21 @@
     <footer class="main-footer">
       <nav>
         <a href="index.html">
-          <img src="./resources/home.png" alt="alt-home" class="home-inactive" />
+          <img src="./resources/home_filled.png" alt="alt-home-active" class="home-active" />
         </a>
 
         <a href="bookmark.html">
           <img
-            src="./resources/bookmark_filled.png"
-            alt="alt-bookmark-active"
-            class="bookmark-active"
+            src="./resources/bookmark_transparent.png"
+            alt="alt-bookmark-inactive"
+            class="bookmark-inactive"
           />
         </a>
-
+        
         <a href="profile.html">
           <img
             src="./resources/profile.png"
-            alt="alt-profile"
+            alt="alt-profile-inactive"
             class="profile-inactive"
           />
         </a>

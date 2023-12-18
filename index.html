@@ -3,40 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/index.js" defer></script>
     <title>Document</title>
     <title>CSS Quiz by Rubens Kuhn & Spiced Academy</title>
+
+    <!-- 
+
+      1) To start codin an Html file, just type '!' in the first line.
+         Voilà! The main parts of the head apear ready. 
+         a Website is composed by: Head, Body, Footer
+         Head is mostly meta data the browsers use to serach, spy whatever else they do.
+         It can contain some scripts as seen later below.
+         Realy important is to include the link for the .css file, 
+         that will modify and give a look to our website (nachst line!).
+
+    -->
+    
     <link rel="stylesheet" href="./styles.css" />
+
+    <!-- 
+
+      * Special case: Introducing code to limmit scale down of the page for moblile phones
+      So far seems good 
+      don't know how it works, plese recheck
+      it is an html hard solution: java might have smarter ones 
+      cheat from @mevsme @stackoverflow.com follows.
+      Begining of the cheat:
+
+
+    -->
+    
+    <meta
+      name="viewport"
+      id="vp"
+      content="user-scalable=no, width=520, initial-scale=0.5, maximum-scale=0.5"
+    />
+    <script>
+      window.onload = function () {
+        if (screen.width > 520) {
+          var mvp = document.getElementById("vp");
+          //mvp.setAttribute('content','');
+          mvp.setAttribute("content", "width=device-width, initial-scale=1");
+        }
+      };
+    </script>
+    <!-- 
+
+      :End of cheat.
+
+    -->
+    
   </head>
+
+  <!-- 
+
+      2) Afer the Head is closed, comes the Body. 
+         It is normaly formed by: header and main sections.
+         Header is obvious: the main title!
+         Like the name of a movie or titles of articles in the news paper:
+         will apear always on the top!
+         
+     3) In the Main section we will put the text, pictures, videos, cards etc: to tell the story.
+         Main can be dividend in <articles>, that contein h1, h2, h3: sub-headeers to tell browsers 
+         the level of importance of the information.
+         And/Or, divided into <sections>, with paragraphs <P>, images <img>, <buttons>, 
+         among many options, or finally data pulled togueder in groups / containers with <d>.
+
+     4) Classifiying each of element in a precise and clean way is imperative! 
+        Otherwiser terror will follow when correction is needed (ex.: diferent elements with same name, etc)  
+        Very important: think about the structure of the website,  and how to correct name data 
+        BEFORE starting coding!
+        Use BEM and draw the website!
+        Moving on!
+        
+    -->
 
   <body>
     <header class="title">Supa Dupa CSS Quiza!!</header>
 
     <main class="main">
-      <section class="quiz-card">
-        <p class="question--number">1. Question:</p>
-        <p class="question">What does CSS stand for?</p>
-        <div class="answer--field">
-          <button class="show-answer">
+        
+      <!-- 
+
+            5) In this example, I must create several cards by piling up the elements in groups of "cards".
+               Each card has a number, a question, an answer and a couple of buttons.
+               Once structured I will give them shine by using css coding!
+               Unfortunately, I cannot (yet!) pull the data from a table to save time + add authomatization.
+               = it is the learning process to manually repeat again and again coding several individual cards.
+               :(
+                Oh, well, c'est la vie!
+
+        -->
+
+      <section class="quiz_card">
+        <p class="quiz_card-number_text">1. Question:</p>
+        <p class="quiz_card-question_text">What does CSS stand for?</p>
+
+        <div class="quiz_card-answer_container">
+          <button class="quiz_card-answer_button">
             <img
               src="./resources/question.png"
               alt="alt-answer"
-              class="show-answer--image"
+              class="quiz_card-answer_button-image"
             />
           </button>
-          <p class="answer hidden">Answer: Cascading Style Sheets</p>
+          <p class="quiz_card-answer_text hidden">
+            Answer: Cascading Style Sheets
+          </p>
         </div>
-        <button class="button-bookmark">
+
+        <button class="quiz_card-bookmark_button">
           <img
             src="./resources/bookmark.png"
             alt="alt-bookmark"
-            class="bookmark--image"
+            class="quiz_card-bookmark_button-image_white"
           />
-        </button>
-        <button class="button-bookmark-active hidden">
           <img
             src="./resources/bookmark_filled.png"
             alt="alt-bookmark-active"
-            class="bookmark--image-active"
+            class="quiz_card-bookmark_button-ative_image"
           />
         </button>
 
@@ -47,195 +132,306 @@
         </div>
       </section>
 
-      <section class="quiz-card">
-        <p class="question--number">2. Question:</p>
-        <p class="question">
+      <!-- 
+    
+    That part on top was the first card, containing the following important 
+    elements/classes that I chose to group in following way:
+    Type:          Named:                                     function: 
+    <section>      quiz_card                                  macro-container/group 
+    <p>            quiz_card-number_text                      text-1
+    <p>            quiz_card-question_text                    text-2
+    <div>          quiz_card-answer_container                 container/group to hold: button + text
+    <button>       quiz_card-answer_button                    button (for the answer)
+    <img>          quiz_card-answer_button-image              button's image (deco)
+    <p>            quiz_card-answer_text hidden               text as answer, appear when clicking the button
+    <button>       quiz_card-bookmark_button-inactive_image   to bookmark a question, can conflict with other verions elsewhere on the site
+    <button>       quiz_card-bookmark_button-active_image     same as above, button has version on/off     
+    <div>          tag--field                                 container/group to hold tags
+    <a>            tag-html, -css, etc...                     links to be used for crossreference
+        
+     Each of the named classes will be used to enhance visually the individual elements / overal presentation
+     of the site, via css coding.
+     Therefore critical!
+     
+     Unfortunately, I have to manualy recopy the whole structure and manually change about 10 times...
+     Not the smarter way, but the way of the student.
+     Onwards!
+
+     First section done above!
+
+
+    -->
+
+      <section class="card">
+        <p class="quiz_card-number">2. Question</p>
+        <p class="quiz_card-question">
           Which HTML tag is used to link an external CSS file to an HTML
           document?
         </p>
-        <div class="answer--field">
-          <button class="show-answer">
+
+        <div class="quiz_card-answer_field">
+          <button class="quiz_card-answer_button">
             <img
               src="./resources/question.png"
               alt="alt-answer"
-              class="show-answer--image"
+              class="quiz_card-answer_button-image"
             />
           </button>
-          <p class="answer hidden">Answer: link</p>
+          <p class="quiz_card-answer_text hidden">Answer: < link >.</p>
         </div>
-        <button class="button-bookmark">
+
+        <button class="quiz_card-bookmark_button-inactive">
           <img
             src="./resources/bookmark.png"
             alt="alt-bookmark"
-            class="bookmark--image"
+            class="quiz_card-bookmark_button-inactive_image"
           />
         </button>
-      </button>
-      <button class="button-bookmark-active hidden">
-        <img
-          src="./resources/bookmark_filled.png"
-          alt="alt-bookmark-active"
-          class="bookmark--image-active"
-        />
-      </button>
-        <div class="tag--field">
-          <a href="#html" class="tag-html"> #html</a>
-          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
-          <a href="#css" class="tag-flexbox"> #css</a>
-        </div>
-      </section>
 
-      <section class="quiz-card">
-        <p class="question--number">3. Question:</p>
-        <p class="question">What is the purpose of the HTML div element?</p>
-        <div class="answer--field">
-          <button class="show-answer">
-            <img
-              src="./resources/question.png"
-              alt="alt-answer"
-              class="show-answer--image"
-            />
-          </button>
-          <p class="answer hidden">
-            Answer: It is a container element used to group and style content together.
-          </p>
-        </div>
-        <button class="button-bookmark">
-          <img
-            src="./resources/bookmark.png"
-            alt="alt-bookmark"
-            class="bookmark--image"
-          />
-        </button>
-      </button>
-      <button class="button-bookmark-active hidden">
-        <img
-          src="./resources/bookmark_filled.png"
-          alt="alt-bookmark-active"
-          class="bookmark--image-active"
-        />
-      </button>
-        <div class="tag--field">
-          <a href="#html" class="tag-html"> #html</a>
-          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
-          <a href="#css" class="tag-flexbox"> #css</a>
-        </div>
-      </section>
-
-      <section class="quiz-card">
-        <p class="question--number">4. Question:</p>
-        <p class="question">Which CSS property is used to change the text color of an element?</p>
-        <div class="answer--field">
-          <button class="show-answer">
-            <img
-              src="./resources/question.png"
-              alt="alt-answer"
-              class="show-answer--image"
-            />
-          </button>
-          <p class="answer hidden">
-            Answer: color
-          </p>
-        </div>
-        <button class="button-bookmark">
-          <img
-            src="./resources/bookmark.png"
-            alt="alt-bookmark"
-            class="bookmark--image"
-          />
-        </button>
-      </button>
-      <button class="button-bookmark-active hidden">
-        <img
-          src="./resources/bookmark_filled.png"
-          alt="alt-bookmark-active"
-          class="bookmark--image-active"
-        />
-      </button>
-        <div class="tag--field">
-          <a href="#html" class="tag-html"> #html</a>
-          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
-          <a href="#css" class="tag-flexbox"> #css</a>
-        </div>
-      </section>
-
-        <section class="quiz-card">
-          <p class="question--number">5. Question:</p>
-          <p class="question">What is the default display property for most HTML elements?</p>
-          <div class="answer--field">
-            <button class="show-answer">
-              <img
-                src="./resources/question.png"
-                alt="alt-answer"
-                class="show-answer--image"
-              />
-            </button>
-            <p class="answer hidden">Answer: block</p>
-          </div>
-          <button class="button-bookmark">
-            <img
-              src="./resources/bookmark.png"
-              alt="alt-bookmark"
-              class="bookmark--image"
-            />
-          </button>
-        </button>
-        <button class="button-bookmark-active hidden">
+        <button class="quiz_card-bookmark_button-ative_image">
           <img
             src="./resources/bookmark_filled.png"
             alt="alt-bookmark-active"
             class="bookmark--image-active"
           />
         </button>
-          <div class="tag--field">
-            <a href="#html" class="tag-html"> #html</a>
-            <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
-            <a href="#css" class="tag-flexbox"> #css</a>
-          </div>
-        </section>
 
-        <section class="quiz-card">
-          <p class="question--number">6. Question:</p>
-          <p class="question">How can you center an element horizontally in CSS?</p>
-          <div class="answer--field">
-            <button class="show-answer">
-              <img
-                src="./resources/question.png"
-                alt="alt-answer"
-                class="show-answer--image"
-              />
-            </button>
-            <p class="answer hidden">Answer: By setting its margin property to auto.</p>
-          </div>
-          <button class="button-bookmark">
+        <div class="tag--field">
+          <a href="#html" class="tag-html"> #html</a>
+          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+          <a href="#css" class="tag-flexbox"> #css</a>
+        </div>
+      </section>
+
+      <!--
+
+    Second section done above!
+
+
+-->
+
+      <section class="quiz_card">
+        <p class="quiz_card-number_text">3. Question:</p>
+        <p class="quiz_card-question_text">
+          What is the purpose of the HTML < div > element?
+        </p>
+
+        <div class="quiz_card-answer_container">
+          <button class="quiz_card-answer_button">
             <img
-              src="./resources/bookmark.png"
-              alt="alt-bookmark"
-              class="bookmark--image"
+              src="./resources/question.png"
+              alt="alt-answer"
+              class="quiz_card-answer_button-image"
             />
           </button>
+          <p class="quiz_card-answer_text hidden">
+            Answer: It is a container element used to group and style content
+            together.
+          </p>
+        </div>
+
+        <button class="quiz_card-bookmark_button-inactive">
+          <img
+            src="./resources/bookmark.png"
+            alt="alt-bookmark"
+            class="quiz_card-bookmark_button-inactive_image"
+          />
         </button>
-        <button class="button-bookmark-active hidden">
+        <button class="quiz_card-bookmark_button-ative_image">
           <img
             src="./resources/bookmark_filled.png"
             alt="alt-bookmark-active"
             class="bookmark--image-active"
           />
         </button>
-          <div class="tag--field">
-            <a href="#html" class="tag-html"> #html</a>
-            <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
-            <a href="#css" class="tag-flexbox"> #css</a>
-          </div>
-        </section>
-  
 
-    </main>
+        <div class="tag--field">
+          <a href="#html" class="tag-html"> #html</a>
+          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+          <a href="#css" class="tag-flexbox"> #css</a>
+        </div>
+      </section>
 
+      <!--
+
+    Third section done above!
+
+
+-->
+
+      <section class="quiz_card">
+        <p class="quiz_card-number_text">4. Question:</p>
+        <p class="quiz_card-question_text">
+          Which CSS property is used to change the text color of an element?
+        </p>
+
+        <div class="quiz_card-answer_container">
+          <button class="quiz_card-answer_button">
+            <img
+              src="./resources/question.png"
+              alt="alt-answer"
+              class="quiz_card-answer_button-image"
+            />
+          </button>
+          <p class="quiz_card-answer_text hidden">Answer: color</p>
+        </div>
+
+        <button class="quiz_card-bookmark_button-inactive">
+          <img
+            src="./resources/bookmark.png"
+            alt="alt-bookmark"
+            class="quiz_card-bookmark_button-inactive_image"
+          />
+        </button>
+        <button class="quiz_card-bookmark_button-ative_image">
+          <img
+            src="./resources/bookmark_filled.png"
+            alt="alt-bookmark-active"
+            class="bookmark--image-active"
+          />
+        </button>
+
+        <div class="tag--field">
+          <a href="#html" class="tag-html"> #html</a>
+          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+          <a href="#css" class="tag-flexbox"> #css</a>
+        </div>
+      </section>
+
+      <!--
+
+    Fourth section done above!
+
+
+-->
+
+      <section class="quiz_card">
+        <p class="quiz_card-number_text">5. Question:</p>
+        <p class="quiz_card-question_text">
+          What is the default display property for most HTML elements?
+        </p>
+
+        <div class="quiz_card-answer_container">
+          <button class="quiz_card-answer_button">
+            <img
+              src="./resources/question.png"
+              alt="alt-answer"
+              class="quiz_card-answer_button-image"
+            />
+          </button>
+          <p class="quiz_card-answer_text hidden">
+            Answer: block
+          </p>
+        </div>
+
+        <button class="quiz_card-bookmark_button-inactive">
+          <img
+            src="./resources/bookmark.png"
+            alt="alt-bookmark"
+            class="quiz_card-bookmark_button-inactive_image"
+          />
+        </button>
+        <button class="quiz_card-bookmark_button-ative_image">
+          <img
+            src="./resources/bookmark_filled.png"
+            alt="alt-bookmark-active"
+            class="bookmark--image-active"
+          />
+        </button>
+
+        <div class="tag--field">
+          <a href="#html" class="tag-html"> #html</a>
+          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+          <a href="#css" class="tag-flexbox"> #css</a>
+        </div>
+      </section>
+
+     <!--
+
+    Fith section done above!
+
+
+--> 
+      
+<section class="quiz_card">
+    <p class="quiz_card-number_text">6. Question:</p>
+    <p class="quiz_card-question_text">Question: How can you center an element horizontally in CSS?</p>
+
+    <div class="quiz_card-answer_container">
+      <button class="quiz_card-answer_button">
+        <img
+          src="./resources/question.png"
+          alt="alt-answer"
+          class="quiz_card-answer_button-image"
+        />
+      </button>
+      <p class="quiz_card-answer_text hidden">
+        Answer: By setting its margin property to auto.
+      </p>
+    </div>
+
+    <button class="quiz_card-bookmark_button-inactive">
+      <img
+        src="./resources/bookmark.png"
+        alt="alt-bookmark"
+        class="quiz_card-bookmark_button-inactive_image"
+      />
+    </button>
+    <button class="quiz_card-bookmark_button-ative_image">
+      <img
+        src="./resources/bookmark_filled.png"
+        alt="alt-bookmark-active"
+        class="bookmark--image-active"
+      />
+    </button>
+
+    <div class="tag--field">
+      <a href="#html" class="tag-html"> #html</a>
+      <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+      <a href="#css" class="tag-flexbox"> #css</a>
+    </div>
+  </section>
+</main>
+
+<!--
+
+    Sixth and final section done above!
+    Ok, there are more, but I'm stopping with the retardation and with continue with the CSS part of the exercise.
+    I have all data in a html table for when we have the mechanics to pull data and work it authomatically.
+    The rows 7-10 are also below, just in case.
+    7. Question
+       What is the CSS pseudo-class used to select the first child of an element?
+       Answer: :first-child</td>
+     8. Question
+        Which HTML tag is used to create an ordered (numbered) list?</td>
+        Answer: < ol >.
+     9. Question
+        In CSS, what property is used to control the spacing between lines of text within an element?
+        Answer: line-height
+    10. Question
+        What does the term "responsive web design" refer to?
+        Answer: It refers to designing web pages that adapt and display well on various screen sizes and devices.
+      
+
+--> 
+
+     </main>
+
+     <!-- 
+
+     With the <main> closed above, we are missing only the footer, that on this site will be 
+     very important: It will contain the <nav> bar!
+        
+     -->
+        
     <footer class="main-footer">
       <nav>
         <a href="index.html">
-          <img src="./resources/home_filled.png" alt="alt-home-active" class="home-active" />
+          <img
+            src="./resources/home_filled.png"
+            alt="alt-home-active"
+            class="home-active"
+          />
         </a>
 
         <a href="bookmark.html">
@@ -245,7 +441,7 @@
             class="bookmark-inactive"
           />
         </a>
-        
+
         <a href="profile.html">
           <img
             src="./resources/profile.png"

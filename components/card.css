@@ -1,47 +1,53 @@
-.quiz-card {
-  position: relative;
-  border-radius: 2vw;
-  padding: 2vw;
-  background-color: rgb(43, 226, 168);
-  margin-bottom: 5%;
-  max-width: 1500px;
-}
-.question--number {
-  margin-left: 1%;
-  font-size: 2rem;
-  font-weight: bold;
-}
-.question {
-  margin-top: 2%;
-  font-size: 2rem;
-  margin-left: 7%;
-  font-style: italic;
-}
-.show-answer--image {
-  width: 2vw;
-}
-
-.answer--field {
-  margin-left: 4%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: -5%;
-}
-.answer {
-  font-size: 2rem;
-}
-
 a {
   color: black;
 }
 
+.quiz_card {
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgb(43, 226, 168);
+  margin-bottom: 5%;
+  max-width: 1500px;
+  max-height: 500px;
+  min-width: 350px;
+  min-height: 100px;
+}
+
+.quiz_card-number_text {
+  padding: 1rem;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.quiz_card-question_text {
+  padding: 1rem;
+  margin-top: -2.5rem;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  font-style: italic;
+  max-width: 1200px;
+  max-height: 200px;
+}
+
+.quiz_card-answer_container {
+  padding: 1rem;
+  margin-left: 0.5rem;
+  margin-top: -1.5rem;
+  max-height: 150px;
+}
+
+.quiz_card-answer_text {
+  font-size: 1rem;
+}
+
 .tag--field {
-  padding: 3%;
+  padding: 1vw;
   margin-left: 4%;
   flex-direction: column;
 }
 .tag-html {
+  border-radius: 0.2rem;
   font-size: 1rem;
   width: 5vw;
   padding: 0.5vw;
@@ -49,6 +55,7 @@ a {
   box-shadow: 1px 1px 1px black;
 }
 .tag-flexbox {
+  border-radius: 0.2rem;
   font-size: 1rem;
   width: 5vw;
   padding: 0.5vw;
@@ -56,6 +63,7 @@ a {
   box-shadow: 1px 1px 1px black;
 }
 .tag-css {
+  border-radius: 0.2rem;
   font-size: 1rem;
   width: 5vw;
   padding: 0.5vw;
