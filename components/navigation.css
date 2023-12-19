@@ -1,75 +1,65 @@
 .main-footer {
-  border-radius: 3vw;
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: space-between;
   background-color: greenyellow;
-  padding: 2vw;
   position: sticky;
   bottom: 0px;
-  max-width: 1500px;
-  box-shadow: 1px 1px 1px;
-}
-.home-inactive {
-  background-color: transparent;
-  width: 4vw;
-  padding: 2vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
-}
-.profile-inactive {
-  background-color: transparent;
-  width: 4vw;
-  padding: 2vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
-}
-.bookmark-inactive {
-  background-color: transparent;
-  width: 4vw;
-  padding: 2vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  box-shadow: transparent;
-}
-.home-active {
-  background-color: aquamarine;
-  width: 4vw;
-  padding: 2vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  box-shadow: 1px 1px 1px;
-}
-.bookmark-active {
-  background-color: aquamarine;
-  width: 4vw;
-  padding: 2vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  box-shadow: 1px 1px 1px;
-}
-.profile-active {
-  background-color: aquamarine;
-  width: 4vw;
-  padding: 2vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  box-shadow: 1px 1px 1px;
+  gap: 3%;
+  max-height: 150px;
+  min-width: 530px;
+  min-height: 100px;
+  width: fit-screen;
+  box-shadow: 1px 1px 2px 1px;
 }
 
-.add-inactive {
-  background-color: transparent;
-  width: 1.2rem;
-  padding: 2vw;
-  margin-top: 0.7rem;
-  margin-left: 3vw;
-  margin-right: 3vw;
-}
-.add-active {
+.nav_button {
+  border-radius: 5%;
   background-color: aquamarine;
-  width: 4vw;
-  padding: 1vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  box-shadow: 1px 1px 1px;
+  padding: 1%;
+  max-height: 2.5rem;
+  max-width: 2.5rem;
+  box-shadow: 1px 1px 2px;
+  max-height: 50px;
+  max-width: 50px;
+}
+.nav_button:hover {
+  background-color: rgb(160, 255, 223);
+  transform: scale(1.1);
+  box-shadow: 1px 1px 5px 1px;
+}
+
+.nav_button-on {
+  border-radius: 5%;
+  background-color: #66deb5;
+  padding: 1%;
+  max-height: 2.5rem;
+  max-width: 2.5rem;
+  box-shadow: 1px 1px 2px;
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.nav_button-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+}
+
+.nav_button-image_add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -5%;
+  margin-top: -5%;
+  width: 2.2rem;
+}
+
+.nav_button-image_bookmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10%;
+  width: 1.8rem;
 }

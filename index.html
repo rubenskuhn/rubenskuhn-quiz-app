@@ -88,8 +88,9 @@
     -->
 
   <body>
+    <div class="main">
     <header class="title">Supa Dupa CSS Quiza!!</header>
-
+  </div>
     <main class="main">
         
       <!-- 
@@ -104,10 +105,19 @@
 
         -->
 
-      <section class="quiz_card">
-        <p class="quiz_card-number_text">1. Question:</p>
-        <p class="quiz_card-question_text">What does CSS stand for?</p>
+        <section class="quiz_card">
+        
 
+<!-- ------------------------- -->
+<!--        Fist Card          -->
+<!-- ------------------------- -->
+
+
+        <div class="quiz_card-question_container">
+          <div class="quiz_card-question_element">1#</div>
+          <div class="quiz_card-question_element">Question:</div>
+      </div>
+      <p class="quiz_card-question_text">What does CSS stand for?</p>
         <div class="quiz_card-answer_container">
           
           <button class="quiz_card-answer_button" data-js="quiz_card-answer_button">
@@ -170,46 +180,50 @@
 
     -->
 
-      <section class="card">
-        <p class="quiz_card-number">2. Question</p>
-        <p class="quiz_card-question">
-          Which HTML tag is used to link an external CSS file to an HTML
-          document?
-        </p>
+<!-- ------------------------- -->
+<!--        2nd Card           -->
+<!-- ------------------------- -->
 
-        <div class="quiz_card-answer_field">
-          <button class="quiz_card-answer_button">
-            <img
-              src="./resources/question.png"
-              alt="alt-answer"
-              class="quiz_card-answer_button-image"
-            />
-          </button>
-          <p class="quiz_card-answer_text hidden">Answer: < link >.</p>
-        </div>
+<section class="quiz_card">
+  <div class="quiz_card-number_container>
+  <b class="quiz_card-number">2</b>
+  <b class="quiz_card-number_text"> . Question:</b>
+<p>Which HTML tag is used to link an external CSS file to an HTML</p>
+</div>
 
-        <button class="quiz_card-bookmark_button-inactive">
-          <img
-            src="./resources/bookmark.png"
-            alt="alt-bookmark"
-            class="quiz_card-bookmark_button-inactive_image"
-          />
-        </button>
+  <div class="quiz_card-answer_container">
+    
+    <button class="quiz_card-answer_button" data-js="quiz_card-answer_button">
+      <img
+        src="./resources/question.png"
+        alt="alt-answer"
+        class="quiz_card-answer_button-image"
+      />
+      <p class="quiz_card-answer_button-show_answer-text" data-js="quiz_card-answer_button-show_answer-text">show answer</p>
+    </button>
 
-        <button class="quiz_card-bookmark_button-ative_image">
-          <img
-            src="./resources/bookmark_filled.png"
-            alt="alt-bookmark-active"
-            class="bookmark--image-active"
-          />
-        </button>
+    <p class="quiz_card-answer_text" data-js="quiz_card-answer_text">
+      Answer: < link >
+    </p>
+  </div>
 
-        <div class="tag--field">
-          <a href="#html" class="tag-html"> #html</a>
-          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
-          <a href="#css" class="tag-flexbox"> #css</a>
-        </div>
-      </section>
+  <button class="quiz_card-bookmark_button" data-js="quiz_card-bookmark_button">
+    <img
+      src="./resources/bookmark.png"
+      alt="alt-bookmark"
+      class="quiz_card-bookmark_button-image" data-js="quiz_card-bookmark_button-image"
+    />
+  </button>
+
+
+  <div class="tag--field">
+    <a href="#html" class="tag-html"> #html</a>
+    <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+    <a href="#css" class="tag-flexbox"> #css</a>
+  </div>
+</section>
+
+
 
       <!--
 
@@ -433,38 +447,43 @@
      -->
         
     <footer class="main-footer">
-      <nav>
+      <nav class="main-footer">
+        <div class="nav_button-on">
         <a href="index.html">
           <img
             src="./resources/home_filled.png"
             alt="alt-home-active"
-            class="home-active"
+            class="nav_button-image"
           />
         </a>
-
+      </div>
+      <div class="nav_button">
         <a href="bookmark.html">
           <img
             src="./resources/bookmark_transparent.png"
             alt="alt-bookmark-inactive"
-            class="bookmark-inactive"
+            class="nav_button-image_bookmark"
           />
         </a>
-
+      </div>
+      <div class="nav_button">
         <a href="profile.html">
           <img
             src="./resources/profile.png"
             alt="alt-profile-inactive"
-            class="profile-inactive"
+            class="nav_button-image"
           />
         </a>
-
+      </div>
+      <div class="nav_button">
         <a href="form.html">
           <img
             src="./resources/Add-button-transparent.png"
             alt="alt-add-inactive"
-            class="add-inactive"
+            class="nav_button-image_add"
           />
         </a>
+      </div>
       </nav>
     </footer>
   </body>

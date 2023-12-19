@@ -2,60 +2,100 @@ a {
   color: black;
 }
 
+/*------------------------*/
+/*                        */
+/*     Card Container     */
+/*                        */
+/*------------------------*/
+
 .quiz_card {
   position: relative;
-  font-size: 0.8rem;
   border-radius: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: rgb(43, 226, 168);
-  margin-bottom: 5%;
-  max-width: 1500px;
+  margin: 1%;
+  max-width: 950px;
   max-height: 500px;
   min-width: 350px;
   min-height: 100px;
+  box-shadow: 1px 1px 2px 1px;
 }
 
-.quiz_card-number_text {
-  padding: 0.7rem;
+/*------------------------*/
+/*                        */
+/*  Question Container    */
+/*                        */
+/*------------------------*/
+
+.quiz_card-question_container {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
   margin-left: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: bold;
 }
+
+.quiz_card-question_element {
+  font-size: 1.1rem;
+  margin-left: rem;
+}
+
+/*------------------------*/
+/*                        */
+/*      Question Txt      */
+/*                        */
+/*------------------------*/
+
 .quiz_card-question_text {
-  padding: 0.7rem;
-  margin-top: -2.5rem;
+  display: flex;
+  align-items: flex-start;
   font-size: 1rem;
-  margin-left: 0.5rem;
-  font-style: italic;
-  max-width: 1200px;
-  max-height: 200px;
+  margin-top: 0.5rem;
+  margin-left: 0.6rem;
 }
+
+/*------------------------*/
+/*                        */
+/*    Answer Container    */
+/*                        */
+/*------------------------*/
 
 .quiz_card-answer_container {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   gap: 10%;
-  margin-left: 0.5rem;
-  margin-top: -1.5rem;
-  max-height: 150px;
+  margin: 0.5;
 }
+
+/*------------------------*/
+/*                        */
+/*    Answer Txt          */
+/*                        */
+/*------------------------*/
 
 .quiz_card-answer_text {
   margin-top: -0.5rem;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
-/*--------------------*/
-/*                    */
-/*        TAG         */
+/*------------------------*/
+/*                        */
+/*      Tags Field        */
+/*                        */
+/*------------------------*/
 
 .tag--field {
   font-size: 0.7rem;
   margin-top: 0.5rem;
   padding: 0.5rem;
-  margin-left: 1rem;
+  margin-left: 0.2rem;
 }
+
+/*------------------------*/
+/*                        */
+/*          Tags          */
+/*                        */
+/*------------------------*/
 .tag-html {
   border-radius: 0.2rem;
   width: 5vw;

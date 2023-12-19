@@ -5,34 +5,39 @@
 @import url(components/profile.css);
 
 :root {
-  font-size: 30px;
+  font-size: 25px;
+  justify-content: center;
 }
 * {
   font-family: Geneva;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: aqua;
-  padding: 2vw;
-  max-width: 1800px;
   min-width: 425px;
 }
 
 .main {
-  display: flex;
-  border-radius: 3vw;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 3vw;
-  margin-top: 3vw;
-  margin-bottom: 1vw;
+  border-radius: 2vw;
+  justify-content: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1vw;
   background-color: greenyellow;
-  max-width: 1800px;
-  min-width: 400px;
-  box-shadow: 1px 1px 1px;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  max-width: 1000px;
+  min-width: 500px;
+  box-shadow: 1px 1px 2px 1px;
+  gap: 3%;
 }
+
+/* 
 @media (width> 1200px) {
   :root {
     --font-size: 40px;
   }
-}
+} */

@@ -10,7 +10,9 @@
   </head>
 
   <body>
-    <header class="title">Supa Dupa CSS Quiza!!</header>
+    <div class="main">
+      <header class="title">Supa Dupa CSS Quiza!!</header>
+    </div>
 
     <main class="main">
       
@@ -236,27 +238,45 @@
 
     </main>
 
+          
     <footer class="main-footer">
-      <nav>
+      <nav class="main-footer">
+        <div class="nav_button">
         <a href="index.html">
-          <img src="./resources/home.png" alt="alt-home" class="home-inactive" />
+          <img
+            src="./resources/home.png"
+            alt="alt-home-active"
+            class="nav_button-image"
+          />
         </a>
-
+      </div>
+      <div class="nav_button-on">
         <a href="bookmark.html">
           <img
             src="./resources/bookmark_filled.png"
-            alt="alt-bookmark-active"
-            class="bookmark-active"
+            alt="alt-bookmark-inactive"
+            class="nav_button-image_bookmark"
           />
         </a>
-
+      </div>
+      <div class="nav_button">
         <a href="profile.html">
           <img
             src="./resources/profile.png"
-            alt="alt-profile"
-            class="profile-inactive"
+            alt="alt-profile-inactive"
+            class="nav_button-image"
           />
         </a>
+      </div>
+      <div class="nav_button">
+        <a href="form.html">
+          <img
+            src="./resources/Add-button-transparent.png"
+            alt="alt-add-inactive"
+            class="nav_button-image_add"
+          />
+        </a>
+      </div>
       </nav>
     </footer>
   </body>
