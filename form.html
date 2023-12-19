@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/form.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <title>Form For New Questions</title>
+  </head>
+
+  <body>
+    <main class="main" data-js="main">
+      <section class="quiz_card" data-js="section">
+        <!-- ----------------------------- -->
+        <!--       Form Question           -->
+        <!--                               -->
+
+        <form class="form-new_question-entry" data-js="form-new_question-entry">
+          <label for="form-new_question-entry">Enter your quiz-question:</label>
+          <textarea
+            name="question_entry"
+            id="new_question-entry"
+            class="new_question-entry"
+            data-js="form-question_text-entry"
+          ></textarea>
+          <p class="counter">Max. 100 charecters. Left:</p>
+          <p class="counter" data-js="form-question_counter-display"></p>
+
+          <!-- ----------------------------- -->
+          <!--       Form Answer             -->
+          <!--                               -->
+
+          <label for="quiz_question"
+            >Enter the answer for your quiz-question:</label
+          >
+          <textarea
+            name="quiz_answer"
+            id="quiz_answer"
+            data-js="form-answer_text-entry"
+          >
+          </textarea>
+          <p class="counter">Max. 100 charecters. Left:</p>
+          <p class="counter" data-js="form-answer_counter-display"></p>
+
+          <label for="quiz_tags">Enter your question tags:</label>
+          <textarea
+            name="quiz_tags"
+            id="quiz_tags"
+            data-js="form-quiz_tags-entry"
+          ></textarea>
+          <p class="tags" data-js="form-answer_counter-display"></p>
+
+          <button class="quiz_card-submit_new" data-js="quiz_card-submit_new">
+            <p>Submit</p>
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <nav>
+        <a href="index.html">
+          <img
+            src="./resources/home.png"
+            alt="alt-home-inactive"
+            class="home-inactive"
+          />
+        </a>
+
+        <a href="bookmark.html">
+          <img
+            src="./resources/bookmark_transparent.png"
+            alt="alt-bookmark-inactive"
+            class="bookmark-inactive"
+          />
+        </a>
+
+        <a href="profile.html">
+          <img
+            src="./resources/profile.png"
+            alt="alt-profile-inactive"
+            class="profile-inactive"
+          />
+        </a>
+
+        <a href="form.html">
+          <img
+            src="./resources/Add-button-filled.png"
+            alt="alt-add-inactive"
+            class="add-inactive"
+          />
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

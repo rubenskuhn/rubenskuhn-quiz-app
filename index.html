@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./js/index.js" defer></script>
     <title>Document</title>
+  
     <title>CSS Quiz by Rubens Kuhn & Spiced Academy</title>
 
     <!-- 
@@ -32,7 +32,6 @@
 
 
     -->
-    
     <meta
       name="viewport"
       id="vp"
@@ -50,6 +49,16 @@
     <!-- 
 
       :End of cheat.
+
+    -->
+
+
+    <script src="./js/index.js" defer></script>
+
+     <!-- 
+
+        Itroducing javascript onto Quiz-App-2
+
 
     -->
     
@@ -100,30 +109,29 @@
         <p class="quiz_card-question_text">What does CSS stand for?</p>
 
         <div class="quiz_card-answer_container">
-          <button class="quiz_card-answer_button">
+          
+          <button class="quiz_card-answer_button" data-js="quiz_card-answer_button">
             <img
               src="./resources/question.png"
               alt="alt-answer"
               class="quiz_card-answer_button-image"
             />
+            <p class="quiz_card-answer_button-show_answer-text" data-js="quiz_card-answer_button-show_answer-text">show answer</p>
           </button>
-          <p class="quiz_card-answer_text hidden">
+
+          <p class="quiz_card-answer_text" data-js="quiz_card-answer_text">
             Answer: Cascading Style Sheets
           </p>
         </div>
 
-        <button class="quiz_card-bookmark_button">
+        <button class="quiz_card-bookmark_button" data-js="quiz_card-bookmark_button">
           <img
             src="./resources/bookmark.png"
             alt="alt-bookmark"
-            class="quiz_card-bookmark_button-image_white"
-          />
-          <img
-            src="./resources/bookmark_filled.png"
-            alt="alt-bookmark-active"
-            class="quiz_card-bookmark_button-ative_image"
+            class="quiz_card-bookmark_button-image" data-js="quiz_card-bookmark_button-image"
           />
         </button>
+
 
         <div class="tag--field">
           <a href="#html" class="tag-html"> #html</a>
@@ -447,6 +455,14 @@
             src="./resources/profile.png"
             alt="alt-profile-inactive"
             class="profile-inactive"
+          />
+        </a>
+
+        <a href="form.html">
+          <img
+            src="./resources/Add-button-transparent.png"
+            alt="alt-add-inactive"
+            class="add-inactive"
           />
         </a>
       </nav>

@@ -56,3 +56,20 @@
   margin-right: 3vw;
   box-shadow: 1px 1px 1px;
 }
+
+.add-inactive {
+  background-color: transparent;
+  width: 1.2rem;
+  padding: 2vw;
+  margin-top: 0.7rem;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.add-active {
+  background-color: aquamarine;
+  width: 4vw;
+  padding: 1vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  box-shadow: 1px 1px 1px;
+}
