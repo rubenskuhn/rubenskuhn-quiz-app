@@ -3,6 +3,7 @@
 @import url(components/card.css);
 @import url(components/button.css);
 @import url(components/profile.css);
+@import url(components/form.css);
 
 :root {
   font-size: 25px;
