@@ -1,10 +1,26 @@
 console.clear();
 
+// function toggleButton() {
+//   const cards = document.querySelectorAll('[data-js=card]');
+//   cards.forEach(card => {
+//     const button = card.querySelector('[data-js="button"]');
+//     const link = card.querySelector('[data-js="link"]');
+//     const arrow = card.querySelector('[data-js="arrow"]');
+//     button.addEventListener('click', () => {
+//       link.classList.toggle('hidden');
+//       arrow.classList.toggle('rotate');
+//     });
+//   });
+// }
+
+// toggleButton();
+
 //--------------------------------------
 
-// Bookmark Button variables
+// Quiz Card Bookmark Button Toggle
 
 //--------------------------------------
+
 const BookmarkOFF = "./resources/bookmark.png";
 const BookmarkON = "./resources/bookmark_filled.png";
 let isQuizBookmarkButtonClicked = false;
@@ -15,11 +31,6 @@ const quizCardBookmarkButtonImage = document.querySelector(
   '[data-js="quiz_card-bookmark_button-image"]'
 );
 
-//--------------------------------------
-
-// Quiz Card Bookmark Button Toggle
-
-//--------------------------------------
 quizCardBookmarkButton.addEventListener("click", () => {
   isQuizBookmarkButtonClicked = !isQuizBookmarkButtonClicked;
   if (isQuizBookmarkButtonClicked) {
@@ -27,44 +38,69 @@ quizCardBookmarkButton.addEventListener("click", () => {
   } else {
     quizCardBookmarkButtonImage.setAttribute("src", BookmarkOFF);
   }
-  // Tried remove / append aproach = nope: too much coding, because elimeinates all html lines
-  // isQueryBookmarkButtonClicked = true;
-  // } else {
-  // BookmarkOFF.append();
-  //BookmarkON.remove();
-  // }
 });
 
 //--------------------------------------
 
-// Answer Button variables
+// Quiz Card Bookmark Button Toggle
 
 //--------------------------------------
+
+// // Solution 1# for JUST one button!
+
+// let isQuizAnswerButtonClicked = false;
+// const quizCardAnswerButton = document.querySelector(
+//       '[data-js="quiz_card-answer_button"]'
+//     );
+// const quizCardAnswerText = document.querySelector(
+//       '[data-js="quiz_card-answer_text"]'
+//     );
+// const quizCardToggleShowAnswer = document.querySelector(
+//       '[data-js="quiz_card-answer_button-show_answer-text"]');
+
+//     quizCardAnswerButton.addEventListener("click", () => {
+//       isQuizAnswerButtonClicked = !isQuizAnswerButtonClicked;
+//       if (isQuizAnswerButtonClicked) {
+//         quizCardAnswerText.style.visibility = "hidden";
+//         quizCardToggleShowAnswer.textContent = "Show Answer";
+//         quizCardAnswerButton.style.background = "#66deb5";
+//       } else {
+//         quizCardAnswerText.style.visibility = "visible";
+//         quizCardToggleShowAnswer.textContent = "Hide Answer";
+//         quizCardAnswerButton.style.background = "aquamarine";
+//       }
+//     });
 let isQuizAnswerButtonClicked = false;
-const quizCardAnswerButton = document.querySelector(
-  '[data-js="quiz_card-answer_button"]'
-);
-const quizCardAnswerText = document.querySelector(
-  '[data-js="quiz_card-answer_text"]'
-);
-const quizCardToggleShowAnswer = document.querySelector(
-  '[data-js="quiz_card-answer_button-show_answer-text"]'
-);
 
-//--------------------------------------
+function toggleAnswerButtons() {
+  const allQuizCards = document.querySelectorAll('[data-js="quiz_card"]');
+  console.log(allQuizCards);
 
-// Quiz Card Answer Button Toggle
+  allQuizCards.forEach((quiz_card) => {
+    const quizCardAnswerButton = quiz_card.querySelector(
+      '[data-js="quiz_card-answer_button"]'
+    );
+    const quizCardAnswerText = quiz_card.querySelector(
+      '[data-js="quiz_card-answer_text"]'
+    );
+    const quizCardToggleShowAnswer = quiz_card.querySelector(
+      '[data-js="quiz_card-answer_button-show_answer-text"]'
+    );
 
-//--------------------------------------
-quizCardAnswerButton.addEventListener("click", () => {
-  isQuizAnswerButtonClicked = !isQuizAnswerButtonClicked;
-  if (isQuizAnswerButtonClicked) {
-    quizCardAnswerText.style.visibility = "hidden";
-    quizCardToggleShowAnswer.textContent = "Show Answer";
-    quizCardAnswerButton.style.background = "#66deb5";
-  } else {
-    quizCardAnswerText.style.visibility = "visible";
-    quizCardToggleShowAnswer.textContent = "Hide Answer";
-    quizCardAnswerButton.style.background = "aquamarine";
-  }
-});
+    quizCardAnswerButton.addEventListener("click", () => {
+      isQuizAnswerButtonClicked = !isQuizAnswerButtonClicked;
+      if (isQuizAnswerButtonClicked) {
+        quizCardAnswerText.style.visibility = "hidden";
+        quizCardToggleShowAnswer.textContent = "Show Answer";
+        quizCardAnswerButton.style.background = "#66deb5";
+      } else {
+        quizCardAnswerText.style.visibility = "visible";
+        quizCardToggleShowAnswer.textContent = "Hide Answer";
+        quizCardAnswerButton.style.background = "aquamarine";
+      }
+      //quizCardAnswerText.classList.toggle("hidden");
+    });
+  });
+}
+
+toggleAnswerButtons();

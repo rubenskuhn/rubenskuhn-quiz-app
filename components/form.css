@@ -1,17 +1,21 @@
-.new_question-entry {
-  padding: 5%;
-  margin: 5%;
+.form-entry {
   display: flex;
-  width: 50vw;
-  min-width: 100px;
-  min-height: 50px;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  background-color: rgb(43, 226, 168);
+  margin: 1%;
+  max-width: 950px;
+  min-width: 350px;
+  min-height: 100px;
+  box-shadow: 1px 1px 2px 1px;
 }
 
-.new_answer-entry {
+.new_entry {
   padding: 5%;
   margin: 5%;
   display: flex;
   width: 50vw;
   min-width: 100px;
   min-height: 50px;
+  max-width: 350px;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  
+
     <title>CSS Quiz by Rubens Kuhn & Spiced Academy</title>
 
     <!-- 
@@ -18,7 +18,7 @@
          that will modify and give a look to our website (nachst line!).
 
     -->
-    
+
     <link rel="stylesheet" href="./styles.css" />
 
     <!-- 
@@ -52,16 +52,14 @@
 
     -->
 
-
     <script src="./js/index.js" defer></script>
 
-     <!-- 
+    <!-- 
 
         Itroducing javascript onto Quiz-App-2
 
 
     -->
-    
   </head>
 
   <!-- 
@@ -89,10 +87,9 @@
 
   <body>
     <div class="main">
-    <header class="title">Supa Dupa CSS Quiza!!</header>
-  </div>
+      <header class="title">Supa Dupa CSS Quiza!!</header>
+    </div>
     <main class="main">
-        
       <!-- 
 
             5) In this example, I must create several cards by piling up the elements in groups of "cards".
@@ -105,28 +102,32 @@
 
         -->
 
-        <section class="quiz_card">
-        
+      <!-- ------------------------- -->
+      <!--        Fist Card          -->
+      <!-- ------------------------- -->
 
-<!-- ------------------------- -->
-<!--        Fist Card          -->
-<!-- ------------------------- -->
-
-
+      <section class="quiz_card" data-js="quiz_card">
         <div class="quiz_card-question_container">
           <div class="quiz_card-question_element">1#</div>
           <div class="quiz_card-question_element">Question:</div>
-      </div>
-      <p class="quiz_card-question_text">What does CSS stand for?</p>
+        </div>
+        <p class="quiz_card-question_text">What does CSS stand for?</p>
         <div class="quiz_card-answer_container">
-          
-          <button class="quiz_card-answer_button" data-js="quiz_card-answer_button">
+          <button
+            class="quiz_card-answer_button"
+            data-js="quiz_card-answer_button"
+          >
             <img
               src="./resources/question.png"
               alt="alt-answer"
               class="quiz_card-answer_button-image"
             />
-            <p class="quiz_card-answer_button-show_answer-text" data-js="quiz_card-answer_button-show_answer-text">show answer</p>
+            <p
+              class="quiz_card-answer_button-show_answer-text"
+              data-js="quiz_card-answer_button-show_answer-text"
+            >
+              show answer
+            </p>
           </button>
 
           <p class="quiz_card-answer_text" data-js="quiz_card-answer_text">
@@ -134,14 +135,17 @@
           </p>
         </div>
 
-        <button class="quiz_card-bookmark_button" data-js="quiz_card-bookmark_button">
+        <button
+          class="quiz_card-bookmark_button"
+          data-js="quiz_card-bookmark_button"
+        >
           <img
             src="./resources/bookmark.png"
             alt="alt-bookmark"
-            class="quiz_card-bookmark_button-image" data-js="quiz_card-bookmark_button-image"
+            class="quiz_card-bookmark_button-image"
+            data-js="quiz_card-bookmark_button-image"
           />
         </button>
-
 
         <div class="tag--field">
           <a href="#html" class="tag-html"> #html</a>
@@ -180,88 +184,105 @@
 
     -->
 
-<!-- ------------------------- -->
-<!--        2nd Card           -->
-<!-- ------------------------- -->
+      <!-- ------------------------- -->
+      <!--        2nd Card           -->
+      <!-- ------------------------- -->
 
-
-<div class="quiz_card-question_container">
-  <div class="quiz_card-question_element">2#</div>
-  <div class="quiz_card-question_element">Question:</div>
-</div>
-<p class="quiz_card-question_text">Which HTML tag is used to link an external CSS file to an HTML</p>
-<div class="quiz_card-answer_container">
-  
-  <button class="quiz_card-answer_button" data-js="quiz_card-answer_button">
-    <img
-      src="./resources/question.png"
-      alt="alt-answer"
-      class="quiz_card-answer_button-image"
-    />
-    <p class="quiz_card-answer_button-show_answer-text" data-js="quiz_card-answer_button-show_answer-text">show answer</p>
-  </button>
-
-  <p class="quiz_card-answer_text" data-js="quiz_card-answer_text">
-    Answer: < link >
-  </p>
-</div>
-
-<button class="quiz_card-bookmark_button" data-js="quiz_card-bookmark_button">
-  <img
-    src="./resources/bookmark.png"
-    alt="alt-bookmark"
-    class="quiz_card-bookmark_button-image" data-js="quiz_card-bookmark_button-image"
-  />
-</button>
-
-
-<div class="tag--field">
-  <a href="#html" class="tag-html"> #html</a>
-  <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
-  <a href="#css" class="tag-flexbox"> #css</a>
-</div>
-</section>
-
-<!-- ------------------------- -->
-<!--        3rd Card           -->
-<!-- ------------------------- -->
-
-
-
-
-
-      <section class="quiz_card">
-        <p class="quiz_card-number_text">3. Question:</p>
+      <section class="quiz_card" data-js="quiz_card">
+        <div class="quiz_card-question_container">
+          <div class="quiz_card-question_element">2#</div>
+          <div class="quiz_card-question_element">Question:</div>
+        </div>
         <p class="quiz_card-question_text">
-          What is the purpose of the HTML < div > element?
+          Which HTML tag is used to link an external CSS file to an HTML
         </p>
-
         <div class="quiz_card-answer_container">
-          <button class="quiz_card-answer_button">
+          <button
+            class="quiz_card-answer_button"
+            data-js="quiz_card-answer_button"
+          >
             <img
               src="./resources/question.png"
               alt="alt-answer"
               class="quiz_card-answer_button-image"
             />
+            <p
+              class="quiz_card-answer_button-show_answer-text"
+              data-js="quiz_card-answer_button-show_answer-text"
+            >
+              show answer
+            </p>
           </button>
-          <p class="quiz_card-answer_text hidden">
+
+          <p class="quiz_card-answer_text" data-js="quiz_card-answer_text">
+            Answer: < link >
+          </p>
+        </div>
+
+        <button
+          class="quiz_card-bookmark_button"
+          data-js="quiz_card-bookmark_button"
+        >
+          <img
+            src="./resources/bookmark.png"
+            alt="alt-bookmark"
+            class="quiz_card-bookmark_button-image"
+            data-js="quiz_card-bookmark_button-image"
+          />
+        </button>
+
+        <div class="tag--field">
+          <a href="#html" class="tag-html"> #html</a>
+          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+          <a href="#css" class="tag-flexbox"> #css</a>
+        </div>
+      </section>
+
+      <!-- ------------------------- -->
+      <!--        3rd Card           -->
+      <!-- ------------------------- -->
+
+      <section class="quiz_card" data-js="quiz_card">
+        <div class="quiz_card-question_container">
+          <div class="quiz_card-question_element">3#</div>
+          <div class="quiz_card-question_element">Question:</div>
+        </div>
+        <p class="quiz_card-question_text">
+          What is the purpose of the HTML < div > element?
+        </p>
+        <div class="quiz_card-answer_container">
+          <button
+            class="quiz_card-answer_button"
+            data-js="quiz_card-answer_button"
+          >
+            <img
+              src="./resources/question.png"
+              alt="alt-answer"
+              class="quiz_card-answer_button-image"
+            />
+            <p
+              class="quiz_card-answer_button-show_answer-text"
+              data-js="quiz_card-answer_button-show_answer-text"
+            >
+              show answer
+            </p>
+          </button>
+
+          <p class="quiz_card-answer_text" data-js="quiz_card-answer_text">
             Answer: It is a container element used to group and style content
             together.
           </p>
         </div>
 
-        <button class="quiz_card-bookmark_button-inactive">
+        <button
+          class="quiz_card-bookmark_button"
+          data-js="quiz_card-bookmark_button"
+        >
           <img
             src="./resources/bookmark.png"
             alt="alt-bookmark"
-            class="quiz_card-bookmark_button-inactive_image"
-          />
-        </button>
-        <button class="quiz_card-bookmark_button-ative_image">
-          <img
-            src="./resources/bookmark_filled.png"
-            alt="alt-bookmark-active"
-            class="bookmark--image-active"
+            class="quiz_card-bookmark_button-image"
+            data-js="quiz_card-bookmark_button-image"
           />
         </button>
 
@@ -272,42 +293,50 @@
         </div>
       </section>
 
-      <!--
+      <!-- ------------------------- -->
+      <!--        4th Card           -->
+      <!-- ------------------------- -->
 
-    Third section done above!
-
-
--->
-
-      <section class="quiz_card">
-        <p class="quiz_card-number_text">4. Question:</p>
+      <section class="quiz_card" data-js="quiz_card">
+        <div class="quiz_card-question_container">
+          <div class="quiz_card-question_element">4#</div>
+          <div class="quiz_card-question_element">Question:</div>
+        </div>
         <p class="quiz_card-question_text">
           Which CSS property is used to change the text color of an element?
         </p>
-
         <div class="quiz_card-answer_container">
-          <button class="quiz_card-answer_button">
+          <button
+            class="quiz_card-answer_button"
+            data-js="quiz_card-answer_button"
+          >
             <img
               src="./resources/question.png"
               alt="alt-answer"
               class="quiz_card-answer_button-image"
             />
+            <p
+              class="quiz_card-answer_button-show_answer-text"
+              data-js="quiz_card-answer_button-show_answer-text"
+            >
+              show answer
+            </p>
           </button>
-          <p class="quiz_card-answer_text hidden">Answer: color</p>
+
+          <p class="quiz_card-answer_text" data-js="quiz_card-answer_text">
+            Answer: color
+          </p>
         </div>
 
-        <button class="quiz_card-bookmark_button-inactive">
+        <button
+          class="quiz_card-bookmark_button"
+          data-js="quiz_card-bookmark_button"
+        >
           <img
             src="./resources/bookmark.png"
             alt="alt-bookmark"
-            class="quiz_card-bookmark_button-inactive_image"
-          />
-        </button>
-        <button class="quiz_card-bookmark_button-ative_image">
-          <img
-            src="./resources/bookmark_filled.png"
-            alt="alt-bookmark-active"
-            class="bookmark--image-active"
+            class="quiz_card-bookmark_button-image"
+            data-js="quiz_card-bookmark_button-image"
           />
         </button>
 
@@ -318,44 +347,50 @@
         </div>
       </section>
 
-      <!--
+      <!-- ------------------------- -->
+      <!--        5th Card           -->
+      <!-- ------------------------- -->
 
-    Fourth section done above!
-
-
--->
-
-      <section class="quiz_card">
-        <p class="quiz_card-number_text">5. Question:</p>
+      <section class="quiz_card" data-js="quiz_card">
+        <div class="quiz_card-question_container">
+          <div class="quiz_card-question_element">5#</div>
+          <div class="quiz_card-question_element">Question:</div>
+        </div>
         <p class="quiz_card-question_text">
           What is the default display property for most HTML elements?
         </p>
-
         <div class="quiz_card-answer_container">
-          <button class="quiz_card-answer_button">
+          <button
+            class="quiz_card-answer_button"
+            data-js="quiz_card-answer_button"
+          >
             <img
               src="./resources/question.png"
               alt="alt-answer"
               class="quiz_card-answer_button-image"
             />
+            <p
+              class="quiz_card-answer_button-show_answer-text"
+              data-js="quiz_card-answer_button-show_answer-text"
+            >
+              show answer
+            </p>
           </button>
-          <p class="quiz_card-answer_text hidden">
+
+          <p class="quiz_card-answer_text" data-js="quiz_card-answer_text">
             Answer: block
           </p>
         </div>
 
-        <button class="quiz_card-bookmark_button-inactive">
+        <button
+          class="quiz_card-bookmark_button"
+          data-js="quiz_card-bookmark_button"
+        >
           <img
             src="./resources/bookmark.png"
             alt="alt-bookmark"
-            class="quiz_card-bookmark_button-inactive_image"
-          />
-        </button>
-        <button class="quiz_card-bookmark_button-ative_image">
-          <img
-            src="./resources/bookmark_filled.png"
-            alt="alt-bookmark-active"
-            class="bookmark--image-active"
+            class="quiz_card-bookmark_button-image"
+            data-js="quiz_card-bookmark_button-image"
           />
         </button>
 
@@ -366,54 +401,62 @@
         </div>
       </section>
 
-     <!--
+      <!-- ------------------------- -->
+      <!--        6th Card           -->
+      <!-- ------------------------- -->
 
-    Fith section done above!
+      <section class="quiz_card" data-js="quiz_card">
+        <div class="quiz_card-question_container">
+          <div class="quiz_card-question_element">6#</div>
+          <div class="quiz_card-question_element">Question:</div>
+        </div>
+        <p class="quiz_card-question_text">
+          Question: How can you center an element horizontally in CSS?
+        </p>
 
+        <div class="quiz_card-answer_container">
+          <button
+            class="quiz_card-answer_button"
+            data-js="quiz_card-answer_button"
+          >
+            <img
+              src="./resources/question.png"
+              alt="alt-answer"
+              class="quiz_card-answer_button-image"
+            />
+            <p
+              class="quiz_card-answer_button-show_answer-text"
+              data-js="quiz_card-answer_button-show_answer-text"
+            >
+              show answer
+            </p>
+          </button>
 
---> 
-      
-<section class="quiz_card">
-    <p class="quiz_card-number_text">6. Question:</p>
-    <p class="quiz_card-question_text">Question: How can you center an element horizontally in CSS?</p>
+          <p class="quiz_card-answer_text" data-js="quiz_card-answer_text">
+            Answer: By setting its margin property to auto.
+          </p>
+        </div>
 
-    <div class="quiz_card-answer_container">
-      <button class="quiz_card-answer_button">
-        <img
-          src="./resources/question.png"
-          alt="alt-answer"
-          class="quiz_card-answer_button-image"
-        />
-      </button>
-      <p class="quiz_card-answer_text hidden">
-        Answer: By setting its margin property to auto.
-      </p>
-    </div>
+        <button
+          class="quiz_card-bookmark_button"
+          data-js="quiz_card-bookmark_button"
+        >
+          <img
+            src="./resources/bookmark.png"
+            alt="alt-bookmark"
+            class="quiz_card-bookmark_button-image"
+            data-js="quiz_card-bookmark_button-image"
+          />
+        </button>
 
-    <button class="quiz_card-bookmark_button-inactive">
-      <img
-        src="./resources/bookmark.png"
-        alt="alt-bookmark"
-        class="quiz_card-bookmark_button-inactive_image"
-      />
-    </button>
-    <button class="quiz_card-bookmark_button-ative_image">
-      <img
-        src="./resources/bookmark_filled.png"
-        alt="alt-bookmark-active"
-        class="bookmark--image-active"
-      />
-    </button>
+        <div class="tag--field">
+          <a href="#html" class="tag-html"> #html</a>
+          <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
+          <a href="#css" class="tag-flexbox"> #css</a>
+        </div>
+      </section>
 
-    <div class="tag--field">
-      <a href="#html" class="tag-html"> #html</a>
-      <a href="#flexbox" class="tag-flexbox"> #flexbox</a>
-      <a href="#css" class="tag-flexbox"> #css</a>
-    </div>
-  </section>
-</main>
-
-<!--
+      <!--
 
     Sixth and final section done above!
     Ok, there are more, but I'm stopping with the retardation and with continue with the CSS part of the exercise.
@@ -433,55 +476,54 @@
         Answer: It refers to designing web pages that adapt and display well on various screen sizes and devices.
       
 
---> 
+-->
+    </main>
 
-     </main>
-
-     <!-- 
+    <!-- 
 
      With the <main> closed above, we are missing only the footer, that on this site will be 
      very important: It will contain the <nav> bar!
         
-     -->
-        
+-->
+
     <footer class="main-footer">
       <nav class="main-footer">
         <div class="nav_button-on">
-        <a href="index.html">
-          <img
-            src="./resources/home_filled.png"
-            alt="alt-home-active"
-            class="nav_button-image"
-          />
-        </a>
-      </div>
-      <div class="nav_button">
-        <a href="bookmark.html">
-          <img
-            src="./resources/bookmark_transparent.png"
-            alt="alt-bookmark-inactive"
-            class="nav_button-image_bookmark"
-          />
-        </a>
-      </div>
-      <div class="nav_button">
-        <a href="profile.html">
-          <img
-            src="./resources/profile.png"
-            alt="alt-profile-inactive"
-            class="nav_button-image"
-          />
-        </a>
-      </div>
-      <div class="nav_button">
-        <a href="form.html">
-          <img
-            src="./resources/Add-button-transparent.png"
-            alt="alt-add-inactive"
-            class="nav_button-image_add"
-          />
-        </a>
-      </div>
+          <a href="index.html">
+            <img
+              src="./resources/home_filled.png"
+              alt="alt-home-active"
+              class="nav_button-image"
+            />
+          </a>
+        </div>
+        <div class="nav_button">
+          <a href="bookmark.html">
+            <img
+              src="./resources/bookmark_transparent.png"
+              alt="alt-bookmark-inactive"
+              class="nav_button-image_bookmark"
+            />
+          </a>
+        </div>
+        <div class="nav_button">
+          <a href="profile.html">
+            <img
+              src="./resources/profile.png"
+              alt="alt-profile-inactive"
+              class="nav_button-image"
+            />
+          </a>
+        </div>
+        <div class="nav_button">
+          <a href="form.html">
+            <img
+              src="./resources/Add-button-transparent.png"
+              alt="alt-add-inactive"
+              class="nav_button-image_add"
+            />
+          </a>
+        </div>
       </nav>
     </footer>
   </body>
